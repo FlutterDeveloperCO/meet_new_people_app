@@ -1,0 +1,145 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dating_prokit"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:5:5-67
+14-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:5:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:6:5-79
+15-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:6:22-76
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:7:5-79
+16-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:7:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:8:5-81
+17-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:8:22-78
+18    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+18-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:9:5-72
+18-->D:\flutter_templates\pro_kit\full_apps\dating_app_prokit\dating_prokit\android\app\src\main\AndroidManifest.xml:9:22-69
+19
+20    <application
+21        android:name="android.app.Application"
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.7.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b9a960218f5163997c0fdfa3d3078c0e\core-1.7.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+25        android:label="Dating App Flutter" >
+26        <activity
+27            android:name="com.example.dating_prokit.MainActivity"
+28            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+29            android:exported="true"
+30            android:hardwareAccelerated="true"
+31            android:launchMode="singleTop"
+32            android:theme="@style/LaunchTheme"
+33            android:windowSoftInputMode="adjustResize" >
+34
+35            <!--
+36                 Specifies an Android theme to apply to this Activity as soon as
+37                 the Android process has started. This theme is visible to the user
+38                 while the Flutter UI initializes. After that, this theme continues
+39                 to determine the Window background behind the Flutter UI.
+40            -->
+41            <meta-data
+42                android:name="io.flutter.embedding.android.NormalTheme"
+43                android:resource="@style/NormalTheme" />
+44
+45            <intent-filter>
+46                <action android:name="android.intent.action.MAIN" />
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+49            </intent-filter>
+50        </activity>
+51        <!--
+52             Don't delete the meta-data below.
+53             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+54        -->
+55        <meta-data
+56            android:name="flutterEmbedding"
+57            android:value="2" />
+58
+59        <provider
+59-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:12:9-20:20
+60            android:name="com.sangcomz.fishbun.FishBunFileProvider"
+60-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:13:13-68
+61            android:authorities="com.example.dating_prokit.fishbunfileprovider"
+61-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:14:13-71
+62            android:exported="false"
+62-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:15:13-37
+63            android:grantUriPermissions="true" >
+63-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:16:13-47
+64            <meta-data
+64-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:17:13-19:58
+65                android:name="android.support.FILE_PROVIDER_PATHS"
+65-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:18:17-67
+66                android:resource="@xml/provider_paths" />
+66-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:19:17-55
+67        </provider>
+68
+69        <activity
+69-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:22:9-25:51
+70            android:name="com.sangcomz.fishbun.ui.album.AlbumActivity"
+70-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:23:13-71
+71            android:label="@string/album"
+71-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:24:13-42
+72            android:theme="@style/FishBunTheme" />
+72-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:25:13-48
+73        <activity
+73-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:26:9-28:51
+74            android:name="com.sangcomz.fishbun.ui.picker.PickerActivity"
+74-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:27:13-73
+75            android:theme="@style/FishBunTheme" />
+75-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:28:13-48
+76        <activity
+76-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:29:9-31:54
+77            android:name="com.sangcomz.fishbun.ui.detail.DetailActivity"
+77-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:30:13-73
+78            android:theme="@style/DetailViewTheme" />
+78-->[com.sangcomz:FishBun:0.11.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d19340af098f452af07b5ca045ba3409\jetified-FishBun-0.11.2\AndroidManifest.xml:31:13-51
+79
+80        <uses-library
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+81            android:name="androidx.window.extensions"
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+83        <uses-library
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+84            android:name="androidx.window.sidecar"
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+85            android:required="false" />
+85-->[androidx.window:window:1.0.0-beta04] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+86
+87        <provider
+87-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8d120aa649c2aed370574c7028952cac\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+88            android:name="androidx.startup.InitializationProvider"
+88-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8d120aa649c2aed370574c7028952cac\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+89            android:authorities="com.example.dating_prokit.androidx-startup"
+89-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8d120aa649c2aed370574c7028952cac\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+90            android:exported="false" >
+90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8d120aa649c2aed370574c7028952cac\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+91            <meta-data
+91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8d120aa649c2aed370574c7028952cac\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8d120aa649c2aed370574c7028952cac\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+93                android:value="androidx.startup" />
+93-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8d120aa649c2aed370574c7028952cac\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+94            <meta-data
+94-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2dd7e1e94a0e65810db6291100ebf315\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+95                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+95-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2dd7e1e94a0e65810db6291100ebf315\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+96                android:value="androidx.startup" />
+96-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2dd7e1e94a0e65810db6291100ebf315\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+97        </provider>
+98    </application>
+99
+100</manifest>
